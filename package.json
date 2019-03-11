@@ -1,7 +1,9 @@
 {
   "name": "pastis.tech-2",
-  "repository": "git@github.com:n4zim/Talk_pastis.tech-2.git",
+  "description": "Simple examples of what can be done with Docker and Kubernetes",
   "author": "Nazim Lachter <nazim+github@blueforest.fr>",
+  "repository": "git@github.com:n4zim/Talk_pastis.tech-2.git",
+  "license": "Apache-2.0",
   "scripts": {
     "elephant": "node server.js elephant",
     "leopard": "node server.js leopard",
