@@ -1,0 +1,26 @@
+version: "3.3"
+services:
+
+  elephant:
+    container_name: elephant
+    build:
+      context: .
+      dockerfile: ./docker/elephant.Dockerfile
+    ports:
+      - 8090:8080
+
+  leopard:
+    container_name: leopard
+    build:
+      context: .
+      dockerfile: ./docker/leopard.Dockerfile
+    ports:
+      - 8091:8080
+
+  turtle:
+    container_name: turtle
+    build:
+      context: .
+      dockerfile: ./docker/turtle.Dockerfile
+    ports:
+      - 8092:8080
