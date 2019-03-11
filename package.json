@@ -1,0 +1,14 @@
+{
+  "name": "pastis.tech-2",
+  "repository": "git@github.com:n4zim/Talk_pastis.tech-2.git",
+  "author": "Nazim Lachter <nazim+github@blueforest.fr>",
+  "scripts": {
+    "elephant": "node server.js elephant",
+    "leopard": "node server.js leopard",
+    "turtle": "node server.js turtle"
+  },
+  "dependencies": {
+    "express": "^4.16.4",
+    "mustache-express": "^1.2.8"
+  }
+}
