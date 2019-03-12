@@ -1,0 +1,26 @@
+kind: Ingress
+apiVersion: extensions/v1beta1
+metadata:
+  name: loadbalancer
+  annotations:
+    kubernetes.io/ingress.class: gce
+spec:
+  rules:
+    - host: elephant.sandbox.blueforest.fr
+      http:
+        paths:
+          - backend:
+              serviceName: elephant
+              servicePort: 8080
+    - host: leopard.sandbox.blueforest.fr
+      http:
+        paths:
+          - backend:
+              serviceName: leopard
+              servicePort: 8080
+    - host: turtle.sandbox.blueforest.fr
+      http:
+        paths:
+          - backend:
+              serviceName: turtle
+              servicePort: 8080

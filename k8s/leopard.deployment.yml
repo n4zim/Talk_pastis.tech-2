@@ -1,0 +1,19 @@
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: leopard
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: leopard
+  template:
+    metadata:
+      labels:
+        app: leopard
+    spec:
+      containers:
+        - name: leopard
+          image: gcr.io/blueforest/pastistech2_leopard
+          ports:
+            - containerPort: 8080

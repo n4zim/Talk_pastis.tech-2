@@ -1,0 +1,19 @@
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: turtle
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: turtle
+  template:
+    metadata:
+      labels:
+        app: turtle
+    spec:
+      containers:
+        - name: turtle
+          image: gcr.io/blueforest/pastistech2_turtle
+          ports:
+            - containerPort: 8080

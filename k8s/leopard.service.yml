@@ -1,0 +1,12 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: leopard
+spec:
+  type: NodePort
+  selector:
+    app: leopard
+  ports:
+    - name: http
+      port: 8080
+      targetPort: 8080
