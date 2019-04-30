@@ -1,8 +1,8 @@
 {
-  "name": "pastis.tech-2",
+  "name": "kubernetes-sandbox",
   "description": "Simple examples of what can be done with Docker and Kubernetes",
   "author": "Nazim Lachter <nazim+github@blueforest.fr>",
-  "repository": "git@github.com:n4zim/Talk_pastis.tech-2.git",
+  "repository": "git@github.com:n4zim/kubernetes-sandbox.git",
   "license": "Apache-2.0",
   "scripts": {
     "elephant": "node server.js elephant",
