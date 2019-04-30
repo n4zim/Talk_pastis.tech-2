@@ -1,4 +1,4 @@
-# Pastis.tech #2
+# Kubernetes Sandbox
 Simple examples of what can be done with Docker and Kubernetes
 
 To run this, you must have :
